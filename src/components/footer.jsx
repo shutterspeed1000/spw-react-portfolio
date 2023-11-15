@@ -5,9 +5,19 @@ function Footer() {
   return (
    <div>
      
-       <div>Github</div>
-       <div>Email</div>
-       <div>Contact</div>
+     <div className="container">
+  <div className="row">
+    <div className="col-sm">
+      Github
+    </div>
+    <div className="col-sm">
+      Email
+    </div>
+    <div className="col-sm">
+      Contact
+    </div>
+  </div>
+</div>
 
 
 
