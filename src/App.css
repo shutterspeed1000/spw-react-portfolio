@@ -9,17 +9,17 @@
   background-image: url('./assets/1000_F_276080724_hltnCyDjcqAyRtLzDYo3T2jXbBtCD7fl.jpg');
   background-size: cover;
   background-position: center;
-  height: 300px; /* Adjust the height as needed */
-  position: relative;
+  height: 300px; 
+  position:sticky
 
 }
 
 
 
 .navSet{
-  position: absolute;
-  margin: 20px;
-  width: auto;
+  position:sticky;
+  
+  
   
 
 }
