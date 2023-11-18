@@ -1,17 +1,19 @@
 import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
 
-function Prjcard() {
+// fill in links with props from array
+function Prjcard(props) {
   return (
     <Card style={{ width: '18rem' }}>
-    <Card.Img variant="top" src="holder.js/100px180" />
+    <Card.Img variant="top" src={props.sshot} />
     <Card.Body>
-      <Card.Title>Card Title</Card.Title>
+      <Card.Title>{props.title}</Card.Title>
       <Card.Text>
-        Some quick example text to build on the card title and make up the
-        bulk of the card's content.
+       {props.desc}
       </Card.Text>
-      <Button variant="primary">Go somewhere</Button>
+      <a href={props.link}>
+      <Button variant="primary">Visit site</Button>
+      </a>
     </Card.Body>
   </Card>
   );
