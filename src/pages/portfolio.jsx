@@ -7,37 +7,37 @@ import Col from "react-bootstrap/Col";
 const projects = [
   {
     title: "Vacationator",
-    link: "https://microsoft.com",
+    link: "https://vacationator-2de9434bd279.herokuapp.com/login",
     sshot:
-      "https://kinsta.com/wp-content/uploads/2021/11/about-us-page-1024x512.png",
+      "/vacss.png",
     desc: "Quick example of a MVC HR application with security groups and email alerts.",
   },
   {
-    title: "Vacationator",
-    link: "https://microsoft.com",
+    title: "CafeTransmute",
+    link: "https://akcodes29.github.io/CafeTransmute",
     sshot:
-      "https://kinsta.com/wp-content/uploads/2021/11/about-us-page-1024x512.png",
+      "/ctss.png",
+    desc: "Sample application showing the use of external APIs for data transformation.",
+  },
+  {
+    title: "Github Repo",
+    link: "https://github.com/shutterspeed1000",
+    sshot:
+      "/gitss.png",
     desc: "Quick example of a MVC HR application with security groups and email alerts.",
   },
   {
-    title: "Vacationator",
-    link: "https://microsoft.com",
+    title: "Soothebeast.com",
+    link: "https://soothbeast.com",
     sshot:
-      "https://kinsta.com/wp-content/uploads/2021/11/about-us-page-1024x512.png",
-    desc: "Quick example of a MVC HR application with security groups and email alerts.",
-  },
-  {
-    title: "Vacationator",
-    link: "https://microsoft.com",
-    sshot:
-      "https://kinsta.com/wp-content/uploads/2021/11/about-us-page-1024x512.png",
-    desc: "Quick example of a MVC HR application with security groups and email alerts.",
+      "/sbss.png",
+    desc: "Personal homepage hosted on Ubuntu usiny MySQL and Wordpress",
   },
 ];
 
 export default function Portfolio() {
   return (
-    <div>
+    <div className="portfolio">
       <h1>Portfolio</h1>
       <Container>
         <Row>
@@ -49,6 +49,7 @@ export default function Portfolio() {
               desc={projects[0].desc}
             />
           </Col>
+        
           <Col sm={6}>
           <Prjcard
               title={projects[1].title}
@@ -58,6 +59,7 @@ export default function Portfolio() {
             />
           </Col>
         </Row>
+        <hr class="hr" />
         <Row>
           <Col sm={6}>
           <Prjcard

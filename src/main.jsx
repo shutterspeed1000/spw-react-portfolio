@@ -10,6 +10,7 @@ import App from './App.jsx'
 import Portfolio from './pages/portfolio.jsx'
 import About from './pages/about.jsx'
 import Error from './pages/error.jsx';
+import Home from './pages/home.jsx';
 
 
 
@@ -21,6 +22,10 @@ const router = createBrowserRouter([
     element: <App />,
     errorElement: <Error />,
     children: [
+      {
+        index: true,
+        element: <Home />,
+      },
       {
         path: '/About',
         element: <About />,

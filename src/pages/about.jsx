@@ -1,7 +1,7 @@
 export default function About() {
     return (
-      <div>
-        <h1>About Page</h1>
+      <div class="about">
+        <h1>About Sean</h1>
         <p>
         Sean Worrell is an experienced system administrator and application developer with a strong
         track record of success. With expertise in managing complex systems and developing innovative applications, Sean

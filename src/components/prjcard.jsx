@@ -4,15 +4,15 @@ import Card from 'react-bootstrap/Card';
 // fill in links with props from array
 function Prjcard(props) {
   return (
-    <Card style={{ width: '18rem' }}>
-    <Card.Img variant="top" src={props.sshot} />
+    <Card bg='dark' text="light" style={{ width: '25rem', height: '25rem'}}>
+    <Card.Img variant='bottom' src={props.sshot} />
     <Card.Body>
       <Card.Title>{props.title}</Card.Title>
       <Card.Text>
        {props.desc}
       </Card.Text>
       <a href={props.link}>
-      <Button variant="primary">Visit site</Button>
+      <Button>Visit site</Button>
       </a>
     </Card.Body>
   </Card>
