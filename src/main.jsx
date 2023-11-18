@@ -1,24 +1,19 @@
-
-
-import ReactDOM from 'react-dom/client'
-import { createBrowserRouter, RouterProvider } from 'react-router-dom';
+import ReactDOM from "react-dom/client";
+import { createBrowserRouter, RouterProvider } from "react-router-dom";
 
 // add bootstrap
-import 'bootstrap/dist/css/bootstrap.min.css';
+import "bootstrap/dist/css/bootstrap.min.css";
 
-import App from './App.jsx'
-import Portfolio from './pages/portfolio.jsx'
-import About from './pages/about.jsx'
-import Error from './pages/error.jsx';
-import Home from './pages/home.jsx';
-
-
-
+import App from "./App.jsx";
+import Portfolio from "./pages/portfolio.jsx";
+import About from "./pages/about.jsx";
+import Error from "./pages/error.jsx";
+import Home from "./pages/home.jsx";
 
 // Define the accessible routes, and which components respond to which URL
 const router = createBrowserRouter([
   {
-    path: '/',
+    path: "/",
     element: <App />,
     errorElement: <Error />,
     children: [
@@ -27,17 +22,17 @@ const router = createBrowserRouter([
         element: <Home />,
       },
       {
-        path: '/About',
+        path: "/About",
         element: <About />,
       },
       {
-        path: '/Portfolio',
+        path: "/Portfolio",
         element: <Portfolio />,
       },
     ],
   },
 ]);
 
-ReactDOM.createRoot(document.getElementById('root')).render(
+ReactDOM.createRoot(document.getElementById("root")).render(
   <RouterProvider router={router} />
 );
