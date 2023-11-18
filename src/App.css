@@ -1,15 +1,20 @@
-#root {
+/* #root {
+
+  background-image: url('./assets/1000_F_276080724_hltnCyDjcqAyRtLzDYo3T2jXbBtCD7fl.jpg');
+  background-size: cover;
+  background-position: center;
+  height: 300px; 
+  position:sticky;
   max-width: 1280px;
   margin: 0 auto;
-  
   text-align: center;
-}
+} */
 
 .headerImg{
   background-image: url('./assets/1000_F_276080724_hltnCyDjcqAyRtLzDYo3T2jXbBtCD7fl.jpg');
   background-size: cover;
   background-position: center;
-  height: 300px; 
+  height: 150px; 
   position:sticky
 
 }
@@ -17,9 +22,7 @@
 
 
 .navSet{
-  position:sticky;
-  
-  
-  
+  position:relative;
 
+  
 }

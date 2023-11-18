@@ -1,43 +1,35 @@
 import "../App.css";
+import Nav from 'react-bootstrap/Nav';
 
 function Header() {
   return (
     <div>
+
       <div className="headerImg"></div>
 
-      <nav className="navbar navbar-expand-lg navbar-light bg-light navSet">
-        <a className="navbar-brand" href="#">
-          Paul Worrell
-        </a>
-        <button
-          className="navbar-toggler"
-          type="button"
-          data-toggle="collapse"
-          data-target="#navbarSupportedContent"
-          aria-controls="navbarSupportedContent"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span className="navbar-toggler-icon"></span>
-        </button>
+      <Nav>
 
-        <div className="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul className="navbar-nav mr-auto">
-          <li className="nav-item active">
-              <a className="nav-link" href="/">
-                Home <span className="sr-only"></span>
-              </a>
-            </li>
-            <li className="nav-item active">
-              <a className="nav-link" href="/about">
-                About <span className="sr-only"></span>
-              </a>
-            </li>
-          </ul>
-        </div>
-      </nav>
-    </div>
-  );
+      <Nav.Item>
+        <Nav.Link>Sean Worrell</Nav.Link>
+      </Nav.Item>        
+      <Nav.Item>
+        <Nav.Link href="/">Home</Nav.Link>
+      </Nav.Item>
+      <Nav.Item>
+        <Nav.Link href="/portfolio">Portfolio</Nav.Link>
+      </Nav.Item>
+      <Nav.Item>
+        <Nav.Link href="/about">About</Nav.Link>
+      </Nav.Item>
+      <Nav.Item>
+        <Nav.Link href="/about">Resume</Nav.Link>
+      </Nav.Item>
+    </Nav>
+
+
+      </div>
+
+  )
 }
 
 export default Header;

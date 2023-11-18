@@ -1,15 +1,15 @@
 
-import React from 'react'
+// import React from 'react'
 import ReactDOM from 'react-dom/client'
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 
 // add bootstrap
 import 'bootstrap/dist/css/bootstrap.min.css';
 
-import Footer from './components/footer'
-import Header from './components/header.jsx'
-import App from './app.jsx'
+import App from './App.jsx'
+import Portfolio from './pages/portfolio.jsx'
 import About from './pages/about.jsx'
+import Error from './pages/error.jsx';
 
 
 
@@ -24,6 +24,10 @@ const router = createBrowserRouter([
       {
         path: '/About',
         element: <About />,
+      },
+      {
+        path: '/Portfolio',
+        element: <Portfolio />,
       },
     ],
   },
