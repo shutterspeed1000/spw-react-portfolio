@@ -5,10 +5,10 @@ import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import "bootstrap/dist/css/bootstrap.min.css";
 
 import App from './App.jsx';
-import Portfolio from './pages/portfolio.jsx'
-import About from './pages/about.jsx';
-import Error from './pages/error.jsx';
-import Home from './pages/home.jsx';
+import Portfolio from './pages/Portfolio.jsx'
+import About from './pages/About.jsx';
+import Error from './pages/Error.jsx';
+import Home from './pages/Home.jsx';
 
 // Define the accessible routes, and which components respond to which URL
 const router = createBrowserRouter([
