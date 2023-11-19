@@ -1,13 +1,12 @@
 import "../App.css";
-import Container from 'react-bootstrap/Container';
-import Nav from 'react-bootstrap/Nav';
-import Navbar from 'react-bootstrap/Navbar';
-
+import Container from "react-bootstrap/Container";
+import Nav from "react-bootstrap/Nav";
+import Navbar from "react-bootstrap/Navbar";
 
 function Header() {
   return (
     <div>
-     <Navbar bg="dark" data-bs-theme="dark" classname="navi">
+      <Navbar bg="dark" data-bs-theme="dark" classname="navi">
         <Container>
           <Navbar.Brand>Sean Worrell</Navbar.Brand>
           <Nav className="me-auto">
@@ -18,11 +17,7 @@ function Header() {
             <Nav.Link href="/contact">Contact Me</Nav.Link>
           </Nav>
         </Container>
-      </Navbar> 
-
-
-
-
+      </Navbar>
     </div>
   );
 }
