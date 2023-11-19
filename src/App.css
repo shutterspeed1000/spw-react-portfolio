@@ -2,6 +2,22 @@ body {
   background-image: url("/code.png");
 }
 
+.navbar {
+  display: flex;
+  flex-direction: row;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.9);
+  border-radius: 50px;
+  width: 100%;
+  padding: 10px;
+  align-items: center;
+}
+
+.navitem {
+  display: block;
+  align-content: center;
+}
+
 .about {
   color: white;
   background-color: rgba(0, 0, 0, 0.9);
@@ -60,6 +76,12 @@ body {
 }
 
 .footer a:link,
+a:visited {
+  color: white;
+  text-decoration: none;
+}
+
+.navbar a:link,
 a:visited {
   color: white;
   text-decoration: none;

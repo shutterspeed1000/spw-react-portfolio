@@ -6,18 +6,28 @@ import Navbar from "react-bootstrap/Navbar";
 function Header() {
   return (
     <div>
-      <Navbar bg="dark" data-bs-theme="dark" className="navi">
-        <Container>
-          <Navbar.Brand>Sean Worrell</Navbar.Brand>
-          <Nav className="me-auto">
-            <Nav.Link href="/">Home</Nav.Link>
-            <Nav.Link href="/portfolio">Portfolio</Nav.Link>
-            <Nav.Link href="/About">About</Nav.Link>
-            <Nav.Link href="/SPW - Resume.pdf">Resume</Nav.Link>
-            <Nav.Link href="/contact">Contact Me</Nav.Link>
-          </Nav>
-        </Container>
-      </Navbar>
+      <footer className="navbar">
+        <div className="row col-12">
+          <div className="col-2 text-center">
+            <h3>Sean Worrell</h3>
+          </div>
+          <div className="col-2 text-center navitem">
+            <a href="/">Home</a>
+          </div>
+          <div className="col-2 text-center navitem">
+            <a href="/about">About</a>
+          </div>
+          <div className="col-2 text-center navitem">
+            <a href="/portfolio">Portfolio</a>
+          </div>
+          <div className="col-2 text-center navitem">
+            <a href="/contact">Contact</a>
+          </div>
+          <div className="col-2 text-center navitem">
+            <a href="/SPW - Resume.pdf">Resume</a>
+          </div>
+        </div>
+      </footer>
     </div>
   );
 }
