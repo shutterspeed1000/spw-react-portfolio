@@ -7,7 +7,9 @@ export default function Contact() {
 
   const handleSubmit = (event) => {
     event.preventDefault();
-    alert("button");
+    alert(emailVal);
+    alert(nameVal);
+    alert(messageVal);
   };
 
   return (
@@ -43,7 +45,7 @@ export default function Contact() {
           onChange={(e) => setMessageVal(e.target.value)}
         ></input>
         <br></br>
-        <input type="submit" value="Submit"></input>
+        <input type="submit" value="Submit" onClick={handleSubmit}></input>
       </form>
     </div>
   );
