@@ -47,7 +47,7 @@ export default function Portfolio() {
   return (
     <div className="portfolio">
       <h1>Portfolio</h1>
-      <Container>
+      <Container class="projectcards">
         <Row>
           <Col sm={4}>
             <Prjcard

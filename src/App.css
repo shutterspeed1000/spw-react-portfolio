@@ -30,7 +30,14 @@ body {
   color: white;
   background-color: rgba(0, 0, 0, 0.9);
   border-radius: 50px;
-  padding: 25px;
+  width: 100%;
+}
+
+.projectcards {
+  display: flexbox;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
 }
 .col-sm-4 {
   margin: 25px;
@@ -75,4 +82,10 @@ a:visited {
   background-color: rgba(0, 0, 0, 0.75);
   border-radius: 50px;
   padding: 100px;
+}
+
+.contactme {
+  display: flex;
+  flex-direction: column;
+  width: 75%;
 }
