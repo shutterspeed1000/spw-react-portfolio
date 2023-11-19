@@ -29,7 +29,7 @@ function Home() {
             .typeString("Need to keep it secure on Nodejs?")
             .pauseFor(1000)
 						.deleteAll()
-            .typeString("Let me be your MERN developer!")
+            .typeString("Let me be your MERN resource!")
 						.start()
             
 				}}

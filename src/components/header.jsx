@@ -7,9 +7,9 @@ import Navbar from 'react-bootstrap/Navbar';
 function Header() {
   return (
     <div>
-     <Navbar bg="light" data-bs-theme="light">
+     <Navbar bg="dark" data-bs-theme="dark" classname="navi">
         <Container>
-          <Navbar.Brand href="#home">Sean Worrell</Navbar.Brand>
+          <Navbar.Brand>Sean Worrell</Navbar.Brand>
           <Nav className="me-auto">
             <Nav.Link href="/">Home</Nav.Link>
             <Nav.Link href="/portfolio">Portfolio</Nav.Link>
@@ -18,7 +18,8 @@ function Header() {
             <Nav.Link href="/contact">Contact Me</Nav.Link>
           </Nav>
         </Container>
-      </Navbar>
+      </Navbar> 
+
 
 
 

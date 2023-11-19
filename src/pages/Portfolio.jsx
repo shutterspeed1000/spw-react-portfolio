@@ -24,7 +24,7 @@ const projects = [
     link: "https://github.com/shutterspeed1000",
     sshot:
       "/gitss.png",
-    desc: "Quick example of a MVC HR application with security groups and email alerts.",
+    desc: "Access my other projects and sites.",
   },
   {
     title: "Soothebeast.com",
@@ -32,6 +32,20 @@ const projects = [
     sshot:
       "/sbss.png",
     desc: "Personal homepage hosted on Ubuntu usiny MySQL and Wordpress",
+  },
+  {
+    title: "Password Generator",
+    link: "https://shutterspeed1000.github.io/PWD-Maker/",
+    sshot:
+      "/pwdss.png",
+    desc: "Simple, open-source password generator",
+  },
+  {
+    title: "Timed Quiz",
+    link: "https://shutterspeed1000.github.io/TimedQuiz/",
+    sshot:
+      "/quizss.png",
+    desc: "Simple timed quiz about Javascript",
   },
 ];
 
@@ -41,7 +55,7 @@ export default function Portfolio() {
       <h1>Portfolio</h1>
       <Container>
         <Row>
-          <Col sm={6}>
+          <Col sm={4}>
             <Prjcard
               title={projects[0].title}
               link={projects[0].link}
@@ -50,7 +64,7 @@ export default function Portfolio() {
             />
           </Col>
         
-          <Col sm={6}>
+          <Col sm={4}>
           <Prjcard
               title={projects[1].title}
               link={projects[1].link}
@@ -58,10 +72,8 @@ export default function Portfolio() {
               desc={projects[1].desc}
             />
           </Col>
-        </Row>
-        <hr class="hr" />
-        <Row>
-          <Col sm={6}>
+
+          <Col sm={4}>
           <Prjcard
               title={projects[2].title}
               link={projects[2].link}
@@ -69,7 +81,9 @@ export default function Portfolio() {
               desc={projects[2].desc}
             />
           </Col>
-          <Col sm={6}>
+          
+    
+          <Col sm={4}>
           <Prjcard
               title={projects[3].title}
               link={projects[3].link}
@@ -77,6 +91,24 @@ export default function Portfolio() {
               desc={projects[3].desc}
             />
           </Col>
+          <Col sm={4}>
+          <Prjcard
+              title={projects[4].title}
+              link={projects[4].link}
+              sshot={projects[4].sshot}
+              desc={projects[4].desc}
+            />
+          </Col>
+
+          <Col sm={4}>
+          <Prjcard
+              title={projects[5].title}
+              link={projects[5].link}
+              sshot={projects[5].sshot}
+              desc={projects[5].desc}
+            />
+          </Col>
+
         </Row>
       </Container>
     </div>
