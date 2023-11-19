@@ -40,6 +40,12 @@ margin: 25px;
   background-color: rgba(0, 0, 0, 0.9);
 }
 
+.footer a:link, a:visited{
+    color:white;
+    text-decoration: none;
+
+}
+
 .hr {
   color: rgba(0, 0, 0, 0);
 }

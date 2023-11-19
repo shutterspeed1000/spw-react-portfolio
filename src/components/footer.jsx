@@ -10,14 +10,19 @@ function Footer() {
    <footer className="footer">
   <div className="row">
     <div className="col-4 text-center">
+      <a href="https://github.com/shutterspeed1000">
       Github
+      </a>
     </div>
     <div className="col-4 text-center">
-      
+      <a href="mailto: spworrell@soothedbeast.com">
       Email
+      </a>
     </div>
     <div className="col-4 text-center">
-      Contact
+      <a href="https://www.linkedin.com/in/paul-worrell-1a6662261">
+      LinkedIn
+      </a>
     </div>
   </div>
 </footer>
