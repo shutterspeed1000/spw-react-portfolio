@@ -9,7 +9,7 @@ function Header({ page }) {
       <header className="navbar">
         <div className="row col-sm-6 col-lg-12">
           <div className="col-2 text-center">
-            <h3>Sean Worrell</h3>
+            <h3 className="col-2">Sean Worrell</h3>
           </div>
           <div
             className={`col-2 text-center navitem ${
