@@ -45,62 +45,20 @@ const projects = [
 
 export default function Portfolio() {
   return (
-    <div className="portfolio">
+    <div className="portfolio text-center">
       <h1>Portfolio</h1>
       <Container class="projectcards">
         <Row>
-          <Col sm={4}>
-            <Prjcard
-              title={projects[0].title}
-              link={projects[0].link}
-              sshot={projects[0].sshot}
-              desc={projects[0].desc}
-            />
-          </Col>
-
-          <Col sm={4}>
-            <Prjcard
-              title={projects[1].title}
-              link={projects[1].link}
-              sshot={projects[1].sshot}
-              desc={projects[1].desc}
-            />
-          </Col>
-
-          <Col sm={4}>
-            <Prjcard
-              title={projects[2].title}
-              link={projects[2].link}
-              sshot={projects[2].sshot}
-              desc={projects[2].desc}
-            />
-          </Col>
-
-          <Col sm={4}>
-            <Prjcard
-              title={projects[3].title}
-              link={projects[3].link}
-              sshot={projects[3].sshot}
-              desc={projects[3].desc}
-            />
-          </Col>
-          <Col sm={4}>
-            <Prjcard
-              title={projects[4].title}
-              link={projects[4].link}
-              sshot={projects[4].sshot}
-              desc={projects[4].desc}
-            />
-          </Col>
-
-          <Col sm={4}>
-            <Prjcard
-              title={projects[5].title}
-              link={projects[5].link}
-              sshot={projects[5].sshot}
-              desc={projects[5].desc}
-            />
-          </Col>
+          {projects.map((project, i) => (
+            <Col sm={12} md={6} lg={4} xl={2} key={i}>
+              <Prjcard
+                title={project.title}
+                link={project.link}
+                sshot={project.sshot}
+                desc={project.desc}
+              />
+            </Col>
+          ))}
         </Row>
       </Container>
     </div>

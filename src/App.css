@@ -49,15 +49,16 @@ body {
   width: 100%;
 }
 
-.projectcards {
-  display: flexbox;
+/* .projectcards {
+  display: flex;
   margin-left: auto;
   margin-right: auto;
   width: 100%;
-}
-.col-sm-4 {
+  flex-wrap: wrap; */
+/* } */
+/* .col-sm-4 {
   margin: 25px;
-}
+} */
 .error {
   color: white;
   background-color: rgba(0, 0, 0, 0.9);
@@ -110,4 +111,8 @@ a:visited {
   display: flex;
   flex-direction: column;
   width: 75%;
+}
+
+.underline {
+  text-decoration: underline overline;
 }
