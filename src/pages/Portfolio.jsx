@@ -50,7 +50,7 @@ export default function Portfolio() {
       <Container class="projectcards">
         <Row>
           {projects.map((project, i) => (
-            <Col sm={12} md={6} lg={4} xl={2} key={i}>
+            <Col sm={12} md={6} lg={4} xl={4} key={i}>
               <Prjcard
                 title={project.title}
                 link={project.link}
