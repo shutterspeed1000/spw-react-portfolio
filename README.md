@@ -1,30 +1,40 @@
-# Password Generator
+# React Portfolio
 
 ## Description
 
 Module #3 Challenge
 
 User Story:
-AS AN employee with access to sensitive data
-I WANT to randomly generate a password that meets certain criteria
-SO THAT I can create a strong password that provides greater security
+AS AN employer looking for candidates with experience building single-page applications
+I WANT to view a potential employee's deployed React portfolio of work samples
+SO THAT I can assess whether they're a good candidate for an open position
 
 Acceptance Criteria
-GIVEN I need a new, secure password
-WHEN I click the button to generate a password
-THEN I am presented with a series of prompts for password criteria
-WHEN prompted for password criteria
-THEN I select which criteria to include in the password
-WHEN prompted for the length of the password
-THEN I choose a length of at least 8 characters and no more than 128 characters
-WHEN asked for character types to include in the password
-THEN I confirm whether or not to include lowercase, uppercase, numeric, and/or special characters
-WHEN I answer each prompt
-THEN my input should be validated and at least one character type should be selected
-WHEN all prompts are answered
-THEN a password is generated that matches the selected criteria
-WHEN the password is generated
-THEN the password is either displayed in an alert or written to the page
+GIVEN a single-page application portfolio for a web developer
+WHEN I load the portfolio
+THEN I am presented with a page containing a header, a section for content, and a footer
+WHEN I view the header
+THEN I am presented with the developer's name and navigation with titles corresponding to different sections of the portfolio
+WHEN I view the navigation titles
+THEN I am presented with the titles About Me, Portfolio, Contact, and Resume, and the title corresponding to the current section is highlighted
+WHEN I click on a navigation title
+THEN I am presented with the corresponding section below the navigation without the page reloading and that title is highlighted
+WHEN I load the portfolio the first time
+THEN the About Me title and section are selected by default
+WHEN I am presented with the About Me section
+THEN I see a recent photo or avatar of the developer and a short bio about them
+WHEN I am presented with the Portfolio section
+THEN I see titled images of six of the developer’s applications with links to both the deployed applications and the corresponding GitHub repository
+WHEN I am presented with the Contact section
+THEN I see a contact form with fields for a name, an email address, and a message
+WHEN I move my cursor out of one of the form fields without entering text
+THEN I receive a notification that this field is required
+WHEN I enter text into the email address field
+THEN I receive a notification if I have entered an invalid email address
+WHEN I am presented with the Resume section
+THEN I see a link to a downloadable resume and a list of the developer’s proficiencies
+WHEN I view the footer
+THEN I am presented with text or icon links to the developer’s GitHub and LinkedIn profiles, and their profile on a third platform (Stack Overflow, Twitter)
 
 ## Table of Contents (Optional)
 
@@ -38,35 +48,23 @@ THEN the password is either displayed in an alert or written to the page
 
 Site contains the following requieremts based on the Acceptance Criteria:
 
-- Creates secure password when button pressed
-- asks required questions to select lenght and character types
-- only allows lenght from 8 to 128
-- requires at least one set of chacters
-- password is created based on answers
-- password is displayed on site page
-
-Technology used based on class materal:
-
-- Operators
-- Variables
-- IF statements
-- Loop statments
-- Functions
-- Constants
-- charAt method
+- React single page site
+- Access to portfolio using a single componet
+- Access to resume to download
+- Contact for with input verification for email address
+- Footer with links to other info about user
 
 ## Link to live site
 
-<https://shutterspeed1000.github.io/PWD-Maker/>
+<https://starlit-manatee-2f7182.netlify.app/>
 
 ## Screenshots
 
-![Screenshot of site](assets/images/SSHOTofapp.png)
+![Screenshot of site](https://starlit-manatee-2f7182.netlify.app/SS-PORT.png)
 
 ## Credits
 
-Starter code from <https://github.com/coding-boot-camp/friendly-parakeet>
-Thank you Jose Lopez for the expert tuotial on functions!
+Thank you Jose Lopez for the expert tuotial on Bootstrap screen sizes!
 
 ## License
 
