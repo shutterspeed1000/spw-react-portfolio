@@ -9,12 +9,12 @@ body {
   background-color: rgba(0, 0, 0, 0.9);
   border-radius: 50px;
   width: 100%;
-  padding: 10px;
+  /* padding: 10px; */
   align-items: center;
 }
 
 .navitem {
-  display: block;
+  display: flex;
   align-content: center;
 }
 
