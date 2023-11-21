@@ -7,7 +7,7 @@ function Header({ page }) {
   return (
     <div>
       <header className="navbar">
-        <div className="row col-sm-6 col-lg-12">
+        <div className="row col-12">
           <div className="col-2 text-center">
             <h3 className="col-2">Sean Worrell</h3>
           </div>
@@ -30,7 +30,7 @@ function Header({ page }) {
               page === "/portfolio" && "underline"
             }`}
           >
-            <a href="/portfolio">Portfolio</a>
+            <a href="/portfolio">Projects</a>
           </div>
           <div
             className={`col-2 text-center navitem ${
